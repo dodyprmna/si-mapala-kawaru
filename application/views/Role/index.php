@@ -71,6 +71,9 @@
 												<div class="col-md-4">
 					        						<input type="checkbox" style="margin-right: 7px" name="akses[]" value="12"> Budgeting
 												</div>
+												<div class="col-md-4">
+					        						<input type="checkbox" style="margin-right: 7px" name="akses[]" value="13"> Report
+												</div>
 					        				</div>
 					        			</div>
 				        			</div>

@@ -56,6 +56,9 @@
 			<div class="col-md-4">
 				<input type="checkbox" style="margin-right: 7px" name="akses_role[]" value="12" <?php if (in_array('12', explode(',', $role->akses_role))) echo "checked"; ?>> Budgeting
 			</div>
+			<div class="col-md-4">
+				<input type="checkbox" style="margin-right: 7px" name="akses_role[]" value="13" <?php if (in_array('13', explode(',', $role->akses_role))) echo "checked"; ?>> Report
+			</div>
 		</div>
 	</div>
 </div>

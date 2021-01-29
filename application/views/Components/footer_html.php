@@ -39,6 +39,10 @@
 	<!-- Select2 -->
 	<script src="<?= base_url('plugins/select2/js/select2.full.min.js') ?>"></script>
 
+	<!-- JQuery print -->
+	<script src="<?php echo base_url() ?>assets/plugin/jquery-print/jQuery.print.js"></script>
+
+
 	<!-- js admin -->
 	<?php if (isset($js)): ?>
 	<script src="<?= base_url('assets/js_admin/'.$js.'.js') ?>"></script>

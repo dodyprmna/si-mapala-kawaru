@@ -75,8 +75,31 @@
                     </a>
                 </li>
                 <?php endif;?>
+                <?php if(in_array('13', explode(',', $this->session->userdata("akses")))):?>
+                <li class="nav-item <?php if(isset($menu)){ if($menu == 'report_kegiatan' || $menu == 'report_proker'){ echo'active'; }} ?>">
+                    <a data-toggle="collapse" href="#report" class="collapsed" aria-expanded="false">
+                        <i class="fas fa-copy"></i>
+                        <p>Report</p>
+                        <span class="caret"></span>
+                    </a>
+                    <div class="collapse <?php if($menu == 'report_kegiatan' || $menu == 'report_proker') echo'show'?>" id="report">
+                        <ul class="nav nav-collapse">
+                            <li class = "<?php if($menu == 'report_kegiatan') echo 'active'?>">
+                                <a href="<?= base_url('Report_kegiatan')?>">
+                                    <span class="sub-item">Report Kegiatan</span>
+                                </a>
+                            </li>
+                            <li class = "<?php if($menu == 'report_proker') echo 'active'?>">
+                                <a href="<?= base_url('Report_proker')?>">
+                                    <span class="sub-item">Report Proker</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <?php endif;?>
                 <?php if(in_array('10', explode(',', $this->session->userdata("akses"))) || in_array('11', explode(',', $this->session->userdata("akses")))):?>
-                <li class="nav-item <?php if(isset($menu)){ if($menu == 'user' || $menu == 'role' || $menu == 'vendor'){ echo'active'; }} ?>">
+                <li class="nav-item <?php if(isset($menu)){ if($menu == 'user' || $menu == 'role'){ echo'active'; }} ?>">
                     <a data-toggle="collapse" href="#master" class="collapsed" aria-expanded="false">
                         <i class="fas fa-layer-group"></i>
                         <p>Master</p>
